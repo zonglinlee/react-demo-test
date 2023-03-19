@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import SetTimeoutProblem from "./demo/setTimoutProblem/SetTimeoutProblem";
+import NoneSetTimeoutProblem from "./demo/setTimoutProblem/NoneSetTimeoutProblem";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div style={{display: "flex", flexWrap: "wrap"}}>
+                <ContentWrapper title="第2题：实现一个 useTimeout Hook"><SetTimeoutProblem/></ContentWrapper>
+                <ContentWrapper title="useTimeout Hook"><NoneSetTimeoutProblem/></ContentWrapper>
+            </div>
+        </div>
+    );
+}
+
+function ContentWrapper(props: any) {
+    const {children, title} = props
+    return (
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "space-between", width: "50%"}}>
+            <div style={{fontWeight: "bold"}}>{title}</div>
+            <div>{children}</div>
+        </div>
+    )
 }
 
 export default App;

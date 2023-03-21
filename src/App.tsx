@@ -7,6 +7,7 @@ import {LayoutEffectTest2, LayoutEffectTest3} from "./demo/useLayoutEffectDemo/L
 import {RefDemo1, RefDemo2} from "./demo/useRefDemo/RefDemo1";
 import {ContextDemo1} from "./demo/useContextDemo/ContextDemo1";
 import {ContextDemo2} from "./demo/useContextDemo/ContextDemo2";
+import './demo/immutableTest/immutableDemo1'
 
 function App() {
     return (

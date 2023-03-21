@@ -5,6 +5,8 @@ import NoneSetTimeoutProblem from "./demo/setTimoutProblem/NoneSetTimeoutProblem
 import LayoutEffectTest1 from "./demo/useLayoutEffectDemo/LayoutEffectTest1";
 import {LayoutEffectTest2, LayoutEffectTest3} from "./demo/useLayoutEffectDemo/LayoutEffectTest2";
 import {RefDemo1, RefDemo2} from "./demo/useRefDemo/RefDemo1";
+import {ContextDemo1} from "./demo/useContextDemo/ContextDemo1";
+import {ContextDemo2} from "./demo/useContextDemo/ContextDemo2";
 
 function App() {
     return (
@@ -20,6 +22,12 @@ function App() {
                 <ContentWrapper title="useRef demo">
                     <RefDemo1/>
                     <RefDemo2/>
+                </ContentWrapper>
+                <ContentWrapper title="useContext demo">
+                    <div style={{display: 'flex'}}>
+                        <ContextDemo1/>
+                        <ContextDemo2/>
+                    </div>
                 </ContentWrapper>
             </div>
         </div>

@@ -4,6 +4,7 @@ import SetTimeoutProblem from "./demo/setTimoutProblem/SetTimeoutProblem";
 import NoneSetTimeoutProblem from "./demo/setTimoutProblem/NoneSetTimeoutProblem";
 import LayoutEffectTest1 from "./demo/useLayoutEffectDemo/LayoutEffectTest1";
 import {LayoutEffectTest2, LayoutEffectTest3} from "./demo/useLayoutEffectDemo/LayoutEffectTest2";
+import {RefDemo1, RefDemo2} from "./demo/useRefDemo/RefDemo1";
 
 function App() {
     return (
@@ -11,10 +12,14 @@ function App() {
             <div style={{display: "flex", flexWrap: "wrap"}}>
                 <ContentWrapper title="第2题：实现一个 useTimeout Hook"><SetTimeoutProblem/></ContentWrapper>
                 <ContentWrapper title="useTimeout Hook"><NoneSetTimeoutProblem/></ContentWrapper>
-                <ContentWrapper title="useLayoutEffect hooks"><LayoutEffectTest1></LayoutEffectTest1></ContentWrapper>
+                <ContentWrapper title="useLayoutEffect hooks"><LayoutEffectTest1/></ContentWrapper>
                 <ContentWrapper title="useLayoutEffect hooks">
-                    <LayoutEffectTest2></LayoutEffectTest2>
-                    <LayoutEffectTest3></LayoutEffectTest3>
+                    <LayoutEffectTest2/>
+                    <LayoutEffectTest3/>
+                </ContentWrapper>
+                <ContentWrapper title="useRef demo">
+                    <RefDemo1/>
+                    <RefDemo2/>
                 </ContentWrapper>
             </div>
         </div>

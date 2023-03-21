@@ -8,6 +8,7 @@ import {RefDemo1, RefDemo2} from "./demo/useRefDemo/RefDemo1";
 import {ContextDemo1} from "./demo/useContextDemo/ContextDemo1";
 import {ContextDemo2} from "./demo/useContextDemo/ContextDemo2";
 import './demo/immutableTest/immutableDemo1'
+import {UnControlInput} from "./demo/formElement/UnControlInput";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
                         <ContextDemo2/>
                     </div>
                 </ContentWrapper>
+                <ContentWrapper title="unControlInput"><UnControlInput/></ContentWrapper>
             </div>
         </div>
     );
